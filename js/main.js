@@ -1,7 +1,4 @@
-// inner width > innerHeight*1.65
-
 const backgroundImageResizer = () => {
-  console.log("a");
   if (window.innerWidth >= innerHeight * 1.65) {
     document.querySelector("body").classList.add("flexible-bg");
   } else {
@@ -24,3 +21,14 @@ const debounce = (func, delay = 500) => {
 
 backgroundImageResizer();
 window.addEventListener("resize", debounce(backgroundImageResizer, 100));
+
+let storageTaken = 815;
+let storageLeft = 1000 - storageTaken;
+const root = document.querySelector(":root");
+
+const setStorageUsage = () => {
+  root.style.setProperty("--storage-taken", `${storageTaken}`);
+  root.style.setProperty("--storage-taken-percent", `${storageTaken / 10}%`);
+  root.style.setProperty("--storage-left", `${storageLeft}`);
+};
+setStorageUsage();

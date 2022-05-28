@@ -1,7 +1,7 @@
 :root {
-  --storage-taken: 0;
+  --storage-taken: 815;
   --storage-taken-percent: 0;
-  --storage-left: 0;
+  --storage-left: 185;
 }
 
 *,

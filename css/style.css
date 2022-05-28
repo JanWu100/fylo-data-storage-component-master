@@ -1,0 +1,31 @@
+body {
+    background-color: #0c122c;
+    background-image: url(".././images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: 100% 100% ;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+    body {
+        background-image: url(".././images/bg-desktop.png");
+        background-size: auto 50%;
+        background-position: left bottom;
+    }
+}
+
+.flexible-bg {
+    background-size: 100% 50%;
+
+}

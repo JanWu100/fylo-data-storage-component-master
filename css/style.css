@@ -20,15 +20,17 @@ body {
   font-family: "Raleway", sans-serif;
   color: hsl(243, 100%, 93%);
   font-size: 14px;
+}
+p {
+  margin: 0;
+}
+main {
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-p {
-  margin: 0;
-}
-
 .fylo {
   padding: 26px;
   width: 100%;

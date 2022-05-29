@@ -26,7 +26,7 @@ p {
 }
 main {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,6 +217,9 @@ footer {
   }
   .flexible-bg {
     background-size: 100% 50%;
+  }
+  main {
+    height: 100vh;
   }
   .grid {
     grid-template-columns: 1fr 1.5fr;
